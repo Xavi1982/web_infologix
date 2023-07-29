@@ -1,0 +1,219 @@
+*{
+    background: rgb(135, 156, 152);
+    background: linear-gradient(45deg, rgb(161, 197, 190)0%, rgba(232, 224, 224, 0.842)35%, rgb(161, 197, 190)100%);
+    
+}
+
+h3{
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 900;
+    color: black;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+header{
+    height: 20rem;
+    background-image: url(../styles/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 900;
+    color: black;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+h4{
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 900;
+    color: black;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+a{
+    border-radius: 10%/20%;
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 900;
+    color: black;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+h1, h3, h4{
+    background: rgb(135, 156, 152);
+    
+}
+
+#parrafo_intro{
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    min-height: 5rem;
+    height: 10rem;
+    padding: 2%;
+}
+
+article img{
+    width: 100%;
+}
+
+#parrafo_soft{
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    min-height: 6rem;
+    height: 12rem;
+    padding: 2%;
+}
+
+#parrafo_hard{
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    min-height: 5rem;
+    height: 10rem;
+    padding: 2%;
+}
+
+
+.container{
+    
+    width: 95%;;
+    height: 10%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: .2rem solid white;
+    border-right: .2rem solid white;
+    animation: border-top-right 6s infinite alternate;
+}
+
+.container:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: .2rem solid white;
+    border-left: .2rem solid white;
+    animation: border-bottom-left 6s infinite alternate;
+}
+
+@keyframes border-top-right{
+    0%{width: 0%; height: 0%}
+    25%{width:100%; height: 0%}
+    50%{width:100%; height: 95%}
+    100%{width:100%; height: 95%}
+}
+
+@keyframes border-bottom-left{
+    0%{width: 0%; height: 0%}
+    25%{width:100%; height: 0%}
+    50%{width:100%; height: 95%}
+    100%{width:100%; height: 95%}
+}
+
+/*
+@keyframes border-bottom-left{
+    0%{width: 0%; height: 0%; opacity: 0;}
+    50%{width:0%; height: 0%; opacity: 0;}
+    50.1%{width:0%; height:0%; opacity: 1;}
+    75%{width:100%; height: 0%; opacity: 1;}
+    100%{width:100%; height: 95%; opacity: 1;}
+}*/
+
+footer nav span a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+    --linkedin: #007785;
+}
+
+.redes-container{
+    display: flex;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.redes-container ul li a i{
+    display: block;
+    padding: 0 .3rem;
+    background: #333;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+/*.redes-container ul:hover{
+    filter: blur(0.2rem);
+}*/
+
+.redes-container ul li a i:hover{
+    transform: translateY(-.2rem) scale(1.05);
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, .4);
+    /*filter: none;*/
+}
+
+.redes-container ul li .facebook :hover{
+    filter: none;
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram :hover{
+    filter: none;
+    background: var(--instagram);
+}
+
+.redes-container ul li .twitter :hover{
+    filter: none;
+    background: var(--twitter);
+}
+
+.redes-container ul li .pinterest :hover{
+    filter: none;
+    background: var(--pinterest);
+}
+
+.redes-container ul li .linkedin :hover{
+    filter: none;
+    background: var(--linkedin);
+}

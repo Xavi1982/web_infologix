@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - INFOLOGIX</title>
+    <link rel="stylesheet" href="./styles/contacto.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,500;1,900&display=swap" rel="stylesheet">
+    <!--Icono Redes-->>
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <span>
+        <h3 class="container">INFOLOGIX</h3>
+        </span>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>  
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name">
+
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" name="lastname">
+
+                <br>
+
+                <label for="date">Fecha de Nacimiento</label>
+                <input type="date" id="date" name="date">
+
+                <label for="genre">Género</label>
+                <input type="radio" id="genre" name="genre" value="f">Femenino
+                <input type="radio" id="genre" name="genre" value="m">Masculino
+                <input type="radio" id="genre" name="genre" value="o">Otro
+
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="message">Mensaje</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <span>
+        <h3 class="container">Redes Sociales</h3>
+        </span>
+        <nav class="redes-container">
+            <span>
+            <ul>
+                <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            </span>
+        </nav>
+    </footer>
+</body>
+</html>
